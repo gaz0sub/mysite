@@ -1,8 +1,13 @@
 @charset "utf-8";
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  height: 100%;
   background-color: azure;
 }
 
@@ -26,6 +31,39 @@ h4 {
   font-weight: normal;
 }
 
+div{
+  display: block;
+}
+
+div.content {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+
+
+div.icon {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  background-size: contain;
+  border-radius: 25%;
+  border: 2px solid black;
+  flex-shrink: 0;
+}
+
+div.content-text {
+  margin-left: 16px;
+  display: inline-block;
+}
+
+p.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
 p.description {
   margin: 0;
 }
@@ -34,4 +72,13 @@ p.URL {
   margin: 0;
   color: darkgrey;
   font-size: 12px;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
 }
